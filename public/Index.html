@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario Verde</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <div class="input-group">
+        <span class="icon">📷</span>
+        <input type="email" placeholder="e-mail" required />
+      </div>
+      <div class="input-group">
+        <span class="icon">🔑</span>
+        <input type="password" placeholder="password" required />
+      </div>
+      <div class="input-group">
+        <span class="icon">🌍</span>
+        <select required>
+          <option value="">location</option>
+          <option value="us">United States</option>
+          <option value="mx">Mexico</option>
+          <option value="co">Colombia</option>
+          <option value="br">Brazil</option>
+          <option value="ar">Argentina</option>
+          <option value="cl">Chile</option>
+          <option value="uy">Uruguay</option>
+          <option value="py">Paraguay</option>
+        </select>
+      </div>
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+
+    <div class="social-login">
+      <div class="login-text">Or login with</div>
+      <div class="social-buttons">
+        <button type="button" class="facebook-btn">🔷 Login with Facebook</button>
+        <button type="button" class="twitter-btn">🐦 Login with Twitter</button>
+        <button type="button" class="instagram-btn">📸 Login with Instagram</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

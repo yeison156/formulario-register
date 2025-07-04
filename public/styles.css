@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Capa del fondo verde con difuminado */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #a8e063, #244216); /* Degradado verde */
+  filter: blur(10px); /* Difuminado */
+  z-index: -1; /* Lo coloca detrás del formulario */
+}
+
+
+.form-container {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #f9f9f9;
+}
+
+.input-group .icon {
+  background: #4caf50;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.input-group input,
+.input-group select {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: white;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 10px;
+  background: #4caf50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background: #45a049;
+  border-radius: 10px;
+}
+
+.social-login {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-text {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column; /* O usa row para horizontal */
+  gap: 10px;
+  align-items: center;
+}
+
+.facebook-btn,
+.twitter-btn,
+.instagram-btn {
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 50px; /* <--- Bordes redondeados estilo cápsula */
+  color: white;
+  cursor: pointer;
+  width: 220px;
+  transition: transform 0.2s ease, background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.facebook-btn {
+  background-color: #3b5998;
+}
+
+.twitter-btn {
+  background-color: #1da1f2;
+}
+
+.instagram-btn {
+  background-color: #e1306c;
+}
+
+.facebook-btn:hover,
+.twitter-btn:hover,
+.instagram-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
